@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+:root {
+    font-size: 100%;
+}
+
+@media (max-width: 900px) {
+    :root {
+        font-size: 80%;
+    }
+}
+
+button {
+    background-color: #0b1d39;
+    border: 0;
+    outline: 0;
+    padding: 15px 30px;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+a {
+    font-size: 1rem;
+    text-decoration-line: underline;
+    color: #268afc;
+}
+
+section {
+    margin-bottom: 100px;
+    padding: 5%;
+    padding-top: 80px;
+}
+
+section > div {
+    display: flex;
+    align-items: center;
+}
+
+section > div > .left,
+section > div > .right {
+    flex: 1;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 700px) {
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+
+span {
+    display: block;
+    width: 100px;
+    margin-top: 15px;
+
+    height: 3px;
+    background: #268afc;
+}
+
+.card {
+    background: #ffffff;
+    box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.101961);
+    border-radius: 15px;
+    padding: 20px 40px;
+}
+
+@media (max-width: 700px) {
+    section > div {
+        flex-direction: column;
+    }
+}
+
+.header {
+    background: url(./assets/bg.png);
+    background-size: 100% 100%;
+    background-position: left;
+    min-height: 100vh;
+}
+
+.header img {
+    width: 200px;
+}
+
+.header > div {
+    width: 90%;
+    margin: auto;
+    margin-top: 120px;
+    gap: 100px;
+}
+
+.header div .right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header div .right img {
+    width: 90%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header div .left {
+    width: 100%;
+}
+
+.header div .left h1 {
+    font-size: 2.7rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+/* First */
+
+.first h2 {
+    max-width: 800px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+.first > div {
+    gap: 100px;
+}
+
+.first .left > p {
+    width: 100%;
+    max-width: 450px;
+}
+
+.first .right {
+    width: 100%;
+}
+
+.first .right > div > div > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.first .right > div > div > div > div {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first .right img {
+    width: 100%;
+    max-height: 60px;
+    object-fit: contain;
+}
+
+/* Second */
+
+.second {
+    background-color: #f8fafc;
+}
+
+.second h2 {
+    text-align: center;
+}
+
+.second > div {
+    background: #e7ebf4;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.second .right {
+    display: flex;
+    justify-content: end;
+}
+
+.second .right img {
+    width: 100%;
+    max-width: 250px;
+}
+
+.second .left p {
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+/* third */
+
+.third {
+    background-image: url(./assets/bgBox.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.third h2 {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.third > div {
+    gap: 100px;
+    align-items: stretch;
+}
+
+.third ul {
+    list-style-type: none;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.third li {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.third li p {
+    font-size: 1.2rem;
+}
+
+.third li img {
+    max-width: 20px;
+}
+
+.third .right {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 700px) {
+    .third .right {
+        min-height: 60vh;
+    }
+}
+
+/* forth */
+
+.forth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f8fafc;
+}
+
+.forth > h2,
+.forth > p {
+    text-align: center;
+}
+
+.forth > h2 {
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+
+.forth > p {
+    max-width: 1000px;
+    margin-bottom: 100px;
+}
+
+.forth > div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 50px;
+    align-content: top;
+    margin-bottom: 60px;
+}
+
+.forth > div > div {
+    padding-left: 20px;
+    border-left: 3px solid #268afc;
+    width: 100%;
+    height: max-content;
+}
+
+.forth > div h4 {
+    width: 80%;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.forth > div p {
+    width: 80%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+@media (max-width: 700px) {
+    .forth > div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .forth > div {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* fifth */
+
+.fifth h2 {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.fifth .grid {
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+@media (max-width: 1000px) {
+    .fifth h1 {
+        font-size: 38px;
+    }
+    .fifth .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    .fifth h1 {
+        font-size: 34px;
+    }
+    .fifth .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .fifth h1 {
+        font-size: 30px;
+    }
+    .fifth .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.fifth div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fifth .grid div img {
+    width: 100px;
+    height: 60px;
+    object-fit: contain;
+}
